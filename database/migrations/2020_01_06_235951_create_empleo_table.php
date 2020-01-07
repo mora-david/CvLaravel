@@ -20,6 +20,7 @@ class CreateEmpleoTable extends Migration
             $table->string('empresa');
             $table->string('ciudad');
             $table->string('duracion');
+            $table->string('descripción');
             $table->biginteger('user_id')->unsigned();
             $table->foreign('user_id')->references('id')->on('users');
         });
